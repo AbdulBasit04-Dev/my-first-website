@@ -3,232 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul Basit | Professional Portfolio</title>
-    <style>
-        /* Reset and Premium Cinematic Background */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: #0b0f19;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        /* Profile Card Structure */
-        .portfolio-card {
-            background-color: #111827;
-            width: 100%;
-            max-width: 550px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-            border: 1px solid #1f2937;
-            position: relative;
-        }
-
-        /* Facebook Style Cover Photo Area */
-        .cover-photo {
-            height: 160px;
-            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #06b6d4);
-            position: relative;
-        }
-        .cover-pattern {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0.15;
-            background-image: radial-gradient(#fff 1px, transparent 1px);
-            background-size: 16px 16px;
-        }
-
-        /* Profile Details Layout */
-        .profile-content {
-            padding: 0 30px 35px 30px;
-            text-align: center;
-            position: relative;
-        }
-
-        /* Floating Circular Profile Image */
-        .avatar-container {
-            position: relative;
-            margin-top: -65px;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-        .profile-img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #111827;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            background-color: #1f2937;
-        }
-        .status-dot {
-            width: 16px;
-            height: 16px;
-            background-color: #10b981;
-            border: 3px solid #111827;
-            border-radius: 50%;
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-        }
-
-        /* Typography */
-        h1 {
-            font-size: 26px;
-            color: #f9fafb;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            margin-bottom: 4px;
-        }
-        .headline {
-            color: #60a5fa;
-            font-size: 15px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-        }
-
-        /* Facebook Style Personal Bio Intro */
-        .bio-box {
-            background-color: #1f2937;
-            border-radius: 12px;
-            padding: 16px;
-            margin-bottom: 25px;
-            border: 1px solid #374151;
-            text-align: left;
-        }
-        .bio-title {
-            color: #9ca3af;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 6px;
-        }
-        .bio-text {
-            color: #d1d5db;
-            font-size: 14.5px;
-            line-height: 1.6;
-        }
-
-        /* Technical Skills Matrix */
-        .section-label {
-            color: #9ca3af;
-            font-size: 13px;
-            font-weight: 600;
-            text-align: left;
-            margin-bottom: 10px;
-            padding-left: 2px;
-        }
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 30px;
-        }
-        .skill-badge {
-            background-color: #1e293b;
-            color: #93c5fd;
-            font-size: 12.5px;
-            font-weight: 600;
-            padding: 6px 14px;
-            border-radius: 8px;
-            border: 1px solid #2563eb;
-        }
-
-        /* Action Link Buttons Row */
-        .button-group {
-            display: flex;
-            gap: 12px;
-        }
-        .btn {
-            flex: 1;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            padding: 12px 24px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 14.5px;
-            font-weight: 600;
-            transition: all 0.2s ease;
-        }
-        .btn-primary {
-            background-color: #2563eb;
-            color: #ffffff;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-        }
-        .btn-primary:hover {
-            background-color: #1d4ed8;
-            transform: translateY(-1px);
-        }
-        .btn-secondary {
-            background-color: #374151;
-            color: #e5e7eb;
-            border: 1px solid #4b5563;
-        }
-        .btn-secondary:hover {
-            background-color: #4b5563;
-            color: #ffffff;
-            transform: translateY(-1px);
-        }
-    </style>
+    <meta name="description" content="Abdul Basit - BS Computer ScienceStudent Portfolio">
+    <title>Abdul Basit | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="portfolio-card">
-        <!-- Facebook Style Gradient Cover Banner -->
-        <div class="cover-photo">
-            <div class="cover-pattern"></div>
-        </div>
-        
-        <div class="profile-content">
-            <!-- Floating Circular User Image Box -->
-            <div class="avatar-container">
-                <img src="profile.jpg" alt="Abdul Basit" class="profile-img">
-                <div class="status-dot" title="Available for projects"></div>
-            </div>
-            
-            <h1>Abdul Basit</h1>
-            <div class="headline">Software Engineering Student</div>
-            
-            <!-- Facebook-Style Profile Info Block -->
-            <div class="bio-box">
-                <div class="bio-title">Intro / About Me</div>
-                <p class="bio-text">
-                    Welcome to my official profile! I am currently a 4th-semester software engineering student building responsive architectures and modern computing systems. Focused on crafting robust backends and premium front-end designs.
-                </p>
-            </div>
-            
-            <!-- Skills Section -->
-            <div class="section-label">Core Technical Stack</div>
-            <div class="skills-grid">
-                <div class="skill-badge">C++</div>
-                <div class="skill-badge">Java</div>
-                <div class="skill-badge">C#</div>
-                <div class="skill-badge">Flutter</div>
-                <div class="skill-badge">HTML5 & CSS3</div>
-                <div class="skill-badge">JavaScript</div>
-            </div>
-            
-            <!-- Action Navigation Buttons -->
-            <div class="button-group">
-                <a href="https://github.com" target="_blank" class="btn btn-primary">Connect on GitHub</a>
-                <a href="mailto:basitsatti534@gmail.com" class="btn btn-secondary">Send Email</a>
-            </div>
-        </div>
-    </div>
+    <!-- Scroll progress bar -->
+    <div class="progress-bar" id="progressBar"></div>
 
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <a href="#home" class="logo">Abdul<span>.</span>Basit</a>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <canvas id="particles"></canvas>
+        <div class="hero-inner">
+            <div class="hero-text reveal">
+                <p class="hello">👋 Hello, I'm</p>
+                <h1>Abdul <span class="gradient-text">Basit</span></h1>
+                <h2>I am a <span id="typing"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc">
+                    4th-semester BS Computer Science student building responsive apps,
+                    robust backends and premium front-end designs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Hire Me</a>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg>
+                    </a>
+                    <a href="mailto:basitsatti534@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 7 10 7 10-7"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image reveal">
+                <div class="img-ring">
+                    <img src="profile.jpg" alt="Abdul Basit">
+                </div>
+                <div class="float-card card-1">⚡ C++ &amp; Java</div>
+                <div class="float-card card-2">📱 Flutter</div>
+                <div class="float-card card-3">🌐 Web Dev</div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+            <p class="section-sub reveal">A little about who I am and what I do</p>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a passionate <strong>BS Computer Science student</strong> currently in my
+                        4th semester. I love turning ideas into clean, fast and good-looking software.
+                    </p>
+                    <p>
+                        From object-oriented programming in C++, Java and C# to mobile apps with Flutter
+                        and modern websites with HTML, CSS and JavaScript, I enjoy learning new
+                        technologies and building real projects with them.
+                    </p>
+                    <p>
+                        I am always open to internships, freelance work and collaborations.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                </div>
+
+                <div class="stats reveal">
+                    <div class="stat">
+                        <h3><span class="counter" data-target="4">0</span><small>th</small></h3>
+                        <p>Semester</p>
+                    </div>
+                    <div class="stat">
+                        <h3><span class="counter" data-target="6">0</span>+</h3>
+                        <p>Technologies</p>
+                    </div>
+                    <div class="stat">
+                        <h3><span class="counter" data-target="10">0</span>+</h3>
+                        <p>Practice Projects</p>
+                    </div>
+                    <div class="stat">
+                        <h3><span class="counter" data-target="100">0</span>%</h3>
+                        <p>Dedication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">My <span class="gradient-text">Skills</span></h2>
+            <p class="section-sub reveal">Technologies I work with</p>
+
+            <div class="skills-wrap">
+                <div class="skill-bars reveal">
+                    <div class="bar">
+                        <div class="bar-top"><span>C++</span><span>85%</span></div>
+                        <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-top"><span>Java</span><span>80%</span></div>
+                        <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-top"><span>C#</span><span>75%</span></div>
+                        <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-top"><span>Flutter</span><span>70%</span></div>
+                        <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-top"><span>HTML5 &amp; CSS3</span><span>90%</span></div>
+                        <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-top"><span>JavaScript</span><span>75%</span></div>
+                        <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-cards reveal">
+                    <div class="skill-card"><div class="icon">⚙️</div><h4>Backend Logic</h4><p>OOP, data structures &amp; clean code</p></div>
+                    <div class="skill-card"><div class="icon">🎨</div><h4>Front-End</h4><p>Responsive, modern interfaces</p></div>
+                    <div class="skill-card"><div class="icon">📱</div><h4>Mobile Apps</h4><p>Cross-platform with Flutter</p></div>
+                    <div class="skill-card"><div class="icon">🗄️</div><h4>Databases</h4><p>SQL &amp; database programming</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-sub reveal">Things I have built and learned from</p>
+
+            <div class="filters reveal">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="web">Web</button>
+                <button class="filter" data-filter="app">Mobile</button>
+                <button class="filter" data-filter="software">Software</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- EDIT THE TEXT AND LINKS BELOW FOR YOUR REAL PROJECTS -->
+                <article class="project reveal" data-category="web">
+                    <div class="project-img p1"><span>🌐</span></div>
+                    <div class="project-body">
+                        <h3>Personal Portfolio</h3>
+                        <p>This responsive portfolio website built with HTML, CSS and JavaScript.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                        <a href="https://github.com" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-category="app">
+                    <div class="project-img p2"><span>📱</span></div>
+                    <div class="project-body">
+                        <h3>Flutter Mobile App</h3>
+                        <p>A cross-platform mobile app with a clean UI and smooth navigation.</p>
+                        <div class="tags"><span>Flutter</span><span>Dart</span></div>
+                        <a href="https://github.com" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-category="software">
+                    <div class="project-img p3"><span>💻</span></div>
+                    <div class="project-body">
+                        <h3>Management System</h3>
+                        <p>Console and desktop system using object-oriented design in C++ / Java.</p>
+                        <div class="tags"><span>C++</span><span>Java</span></div>
+                        <a href="https://github.com" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-category="software">
+                    <div class="project-img p4"><span>🗄️</span></div>
+                    <div class="project-body">
+                        <h3>Database Project</h3>
+                        <p>Database-driven application with tables, queries and stored logic.</p>
+                        <div class="tags"><span>SQL</span><span>C#</span></div>
+                        <a href="https://github.com" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-category="web">
+                    <div class="project-img p5"><span>🛒</span></div>
+                    <div class="project-body">
+                        <h3>Business Website</h3>
+                        <p>Attractive landing page for a small business with modern design.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                        <a href="https://github.com" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-category="app">
+                    <div class="project-img p6"><span>✅</span></div>
+                    <div class="project-body">
+                        <h3>Task Manager App</h3>
+                        <p>Simple productivity app to add, track and complete daily tasks.</p>
+                        <div class="tags"><span>Flutter</span><span>Dart</span></div>
+                        <a href="https://github.com" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section alt" id="journey">
+        <div class="container">
+            <h2 class="section-title reveal">My <span class="gradient-text">Journey</span></h2>
+            <p class="section-sub reveal">Education and learning path</p>
+
+            <div class="timeline">
+                <div class="t-item reveal">
+                    <div class="t-dot"></div>
+                    <div class="t-card">
+                        <span class="t-date">Present</span>
+                        <h4>BS Computer Science</h4>
+                        <p>Currently in 4th semester, studying programming, databases and information security.</p>
+                    </div>
+                </div>
+                <div class="t-item reveal">
+                    <div class="t-dot"></div>
+                    <div class="t-card">
+                        <span class="t-date">Ongoing</span>
+                        <h4>Self-Learning &amp; Projects</h4>
+                        <p>Building websites and Flutter apps to sharpen real-world skills.</p>
+                    </div>
+                </div>
+                <div class="t-item reveal">
+                    <div class="t-dot"></div>
+                    <div class="t-card">
+                        <span class="t-date">Next</span>
+                        <h4>Internship &amp; Freelancing</h4>
+                        <p>Looking for opportunities to work on real client and business projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In <span class="gradient-text">Touch</span></h2>
+            <p class="section-sub reveal">Have a project or an opportunity? Send me a message.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="info-item"><span>📧</span><div><h4>Email</h4><a href="mailto:basitsatti534@gmail.com">basitsatti534@gmail.com</a></div></div>
+                    <div class="info-item"><span>💻</span><div><h4>GitHub</h4><a href="https://github.com" target="_blank">github.com</a></div></div>
+                    <div class="info-item"><span>🟢</span><div><h4>Status</h4><p>Available for projects</p></div></div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© <span id="year"></span> Abdul Basit. All rights reserved.</p>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
