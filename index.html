@@ -1,10 +1,86 @@
-<style>
-  body {
-    text-align: center;
-    font-family: sans-serif;
-    padding-top: 50px;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Basit | Portfolio</title>
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .profile-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #047857;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #1f2937;
+            margin: 10px 0 5px 0;
+        }
+        .title {
+            color: #047857;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        .bio {
+            color: #4b5563;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #1f2937;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #047857;
+        }
+    </style>
+</head>
+<body>
 
-<h1>Welcome to My Website</h1>
-<p>Here's Abdul Basit and its my first website.</p>
+    <div class="profile-card">
+        <!-- We use a professional placeholder image until you add your own photo -->
+        <img src="profile.jpg" alt="Abdul Basit" class="profile-img">
+        
+        <h1>Abdul Basit</h1>
+        <div class="title">Software Engineering Student</div>
+        
+        <p class="bio">
+            Currently in my 4th semester, exploring C++, Java, Flutter, and Web Development. Building modern digital experiences.
+        </p>
+        
+        <a href="https://github.com" target="_blank" class="btn">View My GitHub</a>
+    </div>
+
+</body>
+</html>
